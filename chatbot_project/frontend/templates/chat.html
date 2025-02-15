@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚖ Legal Aid Advisor</title>
+
+    <!-- Load CSS -->
+    <link rel="stylesheet" href="{% static 'css/chat.css' %}">
+
+    <!-- Load JavaScript -->
+    <script defer src="{% static 'js/chat.js' %}"></script>
+</head>
+<body>
+
+    <!-- Floating Chatbot Button -->
+    <div id="chatbot-icon">💬</div>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot-container" class="chatbot-hidden">
+        <div class="chat-header">
+            ⚖ Legal Aid Advisor
+            <span id="close-chat">✖</span>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <div class="bot-message">👋 Welcome! How can I assist you with legal queries?</div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="user-input" placeholder="Ask your legal question..." />
+            <button id="send-btn">➤</button>
+        </div>
+    </div>
+
+</body>
+</html>
