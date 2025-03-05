@@ -12,17 +12,24 @@
 
     <!-- Load JavaScript Correctly -->
     <script defer src="{% static 'js/chat.js' %}"></script>
+       
+    
 </head>
 <body>
-
+ 
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("{% static 'images/background.jpg' %}");
+     }
+    </style>
     <div class="banner">
         <div class="navbar">
-            <img src="{% static 'images/logo.png' %}" class="logo">
+            <img src="{% static 'images/logo.jpg' %}" class="logo">
             <ul>
                 <li><a href="#">Booking</a></li>
                 <li><a href="#">Legal Knowledge</a></li>
                 <li><a href="#">Case Records</a></li>
-                <li><a href="#" id="chatbot-link">Chatbot</a></li>
+                
                 <li><a href="#">Analysis</a></li>
             </ul>
         </div>
@@ -30,10 +37,7 @@
         <div class="content">
             <h1 class="m1">YOUR BRIDGE TO JUSTICE</h1>
             <p class="m2">Secure your rights with expert legal advice.<br> Book now and get 10% off!</p>
-            <div>
-                <button type="button"><span></span>Login</button>
-                <button type="button"><span></span>Sign Up</button>
-            </div>
+            
         </div>
     </div>
 

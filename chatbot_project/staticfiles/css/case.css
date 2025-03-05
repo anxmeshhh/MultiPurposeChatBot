@@ -1,0 +1,67 @@
+/* Case Records Page - Black & Cyan Theme */
+body {
+    background-color: #121212;
+    color: cyan;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+h1 {
+    border-bottom: 2px solid cyan;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1e1e1e;
+    color: cyan;
+    border: 1px solid cyan;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid cyan;
+    text-align: center;
+}
+
+th {
+    background: #222;
+    font-weight: bold;
+}
+
+tr:hover {
+    background: #333;
+}
+
+.active {
+    color: lime;
+}
+
+.closed {
+    color: red;
+}
+
+.download-btn {
+    background-color: cyan;
+    color: #121212;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background-color: #00ffaa;
+}

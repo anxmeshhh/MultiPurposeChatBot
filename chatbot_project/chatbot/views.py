@@ -49,8 +49,8 @@ def chatbot_response(request):
 
 # Render the homepage
 def index(request):
-    return render(request, 'index.html')  # Ensure index.html exists in templates
+    return render(request, 'index.html')  
 
 # Render the chatbot page
 def chat_page(request):
-    return render(request, 'chat.html')  # Ensure chat.html exists in templates
+    return render(request, 'chat.html')  

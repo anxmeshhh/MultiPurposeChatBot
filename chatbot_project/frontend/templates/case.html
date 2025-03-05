@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Records | Legal Aid Advisor</title>
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="{% static 'css/case_records.css' %}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📜 Your Case Records</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Case ID</th>
+                    <th>Client Name</th>
+                    <th>Lawyer</th>
+                    <th>Case Type</th>
+                    <th>Filing Date</th>
+                    <th>Hearing Date</th>
+                    <th>Case Status</th>
+                    <th>Verdict</th>
+                    <th>Documents</th>
+                    <th>Last Updated</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Case Record -->
+                <tr>
+                    <td>101</td>
+                    <td>John Doe</td>
+                    <td>Jane Smith</td>
+                    <td>Criminal</td>
+                    <td>2024-03-01</td>
+                    <td>2024-03-20</td>
+                    <td class="active">Active</td>
+                    <td>Pending</td>
+                    <td><a href="{% static 'documents/sample.pdf' %}" target="_blank" class="download-btn">📂 View</a></td>
+                    <td>2024-03-05</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
